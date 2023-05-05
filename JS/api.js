@@ -1,4 +1,4 @@
-const url = '../DB/db.json'
+const url = 'http://localhost:4003/Veterinaria'
 
 export const getApi = async () => {
     try {
@@ -11,14 +11,28 @@ export const getApi = async () => {
     }
 }
 
-export const agregarDatos = async () => {
+export const agregarDatos = async (cogerDatos) => {
     try {
-        await fetch(url , {
+        await fetch(url, {
             method: 'POST',
-            headers: JSON.stringify(coger)
+            body: JSON.stringify(cogerDatos),
+            headers: {
+                'Content-Type': 'application/json'
+            }
         })
+        window.location.href = 'index.html'
     } catch (error) {
-        
+        console.log(error);
     }
 }
 
+export const borrarDatos = async (id) => {
+    try {
+        await fetch(`${url}/${id}`, {
+            method: 'DELETE'
+        })
+        window.location.href = 'index.html'
+    } catch (error) {
+        console.log(error);
+    }
+}
