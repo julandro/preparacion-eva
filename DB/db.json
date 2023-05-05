@@ -1,0 +1,28 @@
+{
+    "Veterinaria": [
+        {
+            "id": 1,
+            "especie": "Perro",
+            "nombreMascota": "Juan",
+            "edad": 4,
+            "enfermedad": "Riñones",
+            "propietario": "Julian"
+        },
+        {
+            "id": 2,
+            "especie": "Gato",
+            "nombreMascota": "Juan",
+            "edad": 2,
+            "enfermedad": "Riñones",
+            "propietario": "Julian"
+        },
+        {
+            "id": 3,
+            "especie": "Leon",
+            "nombreMascota": "Juan",
+            "edad": 8,
+            "enfermedad": "Riñones",
+            "propietario": "Julian"
+        }
+    ]
+}
